@@ -1,0 +1,42 @@
+
+
+.container-fixed{
+    height: 70vh;
+    background-image: url(../img/grupoestudantes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+.container-imagem{
+    
+height: 100vh;
+background-image: url(./img/Untitled.jpg);
+background-size: cover;
+
+}
+
+.container-imagem  {
+    width: 100%;
+    height: auto; /* Garante que a altura seja ajustada automaticamente de acordo com a largura */
+}
+/* Responsividade para celulares */
+
+@media screen and (max-width: 600px) {
+    .container-fixed {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        /* Insira aqui as propriedades CSS específicas para celulares */
+    }
+}
+
+
+/* Media query para telas menores que 400px */
+@media screen and (max-width: 600px) {
+    .container-imagem {
+        background-position: left center; /* Move a imagem mais para a esquerda */
+        height: 30vh; /* Ajusta a altura para 30% da altura da tela */
+    }
+}

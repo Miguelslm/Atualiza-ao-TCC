@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>tcc</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="./assets/image/logoiwolrd.png" alt="logo"
+                        id="logot">
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><i class=''></i>ORÇAMENTO</button>
+            </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+                </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+
+
+
+                <button><i class='bx bxs-graduation'></i>Área do Aluno</button>
+            </div>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#h" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-book-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bx-briefcase-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#"> Forgot Password?</a>
+                    </div>
+                    <button type="Submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+                    </div>
+                </form>
+
+            </div>
+            <div class="form-box register-">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+
+                    </div>
+                    <button type="Submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="./assets/image/dubaione.jpg">
+                <div class="content">
+                   
+                    <div class="title">EMIRADE ÁRABES</div>
+                    <div class="topic">Dubai</div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/usaone.jpg">
+                <div class="content">
+                    <div class="title">ESTADOS UNIDOS</div>
+                    <div class="topic">Washington</div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/australiaone.jpg">
+                <div class="content">
+                    
+                    <div class="title">AUSTRALIA</div>
+                    <div class="topic">Queensland</div>
+                   
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/canadaone.jpg">
+                <div class="content">
+                    <div class="title">CANADÁ</div>
+                    <div class="topic">Toronto</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="./assets/image/dubaione.jpg">
+                <div class="content">
+                    <div class="title">
+                        EMIRATES ÁRABES
+                    </div>
+                    <div class="description">
+                        Dubai
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/usaone.jpg">
+                <div class="content">
+                    <div class="title">
+                        ESTADOS UNIDOS
+                    </div>
+                    <div class="description">
+                        woshigton
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/australiaone.jpg">
+                <div class="content">
+                    <div class="title">
+                        AUSTRALIA
+                    </div>
+                    <div class="description">
+                        Queensland
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/image/canadaone.jpg">
+                <div class="content">
+                    <div class="title">
+                        CANADÁ
+                    </div>
+                    <div class="description">
+                        Toronto
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+                    
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+    <section>
+        <div class="carousel-container-card">
+            <div class="carousel-card">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/3c21c963-be4c-41dc-8cdd-54677763bc67.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Descrição da imagem 1">
+                    </div>
+                    <div class="card-content">
+                        <h2>Aprender um Idioma</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/99eba907-c5d2-41c9-b830-083f228c9d26.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Descrição da imagem 2">
+                    </div>
+                    <div class="card-content">
+                        <h2>Trabalhe Fora</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/3766b515-d39a-4973-a52f-1d333fe9a1ee.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Descrição da imagem 3">
+                    </div>
+                    <div class="card-content">
+                        <h2>Intercâmbio Para Adolescentes</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/ee16bad7-a745-4d33-8458-4393240188b3.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format alt="
+                            Descrição da imagem 4">
+                    </div>
+                    <div class="card-content">
+                        <h2>Ensino Superior</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/6d4d4609-134c-458d-9b9e-fba5ddf302fa.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Descrição da imagem 5">
+                    </div>
+                    <div class="card-content">
+                        <h2>Imigração para o Canada</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://msi.imgix.net/host/imagens/8e52d870-7fde-44be-b726-f3a4a085973a.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Descrição da imagem 6">
+                    </div>
+                    <div class="card-content">
+                        <h2>Opções de Longa Duração</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <h3 class="Sub-title">VEJA NOSSOS PROGRAMAS BEST-SELLERS:</h3>
+        <div class="card-container-one">
+
+            <div class="card-one">
+                <img src="./assets/img/Futamericano.jpg" alt="img">
+                <div class="card-content-one">
+                    <h3>HIGH SCHOOL</h3>
+                    <p>iworld oferece de intercâmbio de férias para adolescentes, em grupo ou individualmente.</p>
+                    <a href="" class="btn-one">Veja mais</a>
+                </div>
+            </div>
+            <div class="card-one">
+                <img src="./assets/img/adolescentes.two.jpg" alt="img">
+                <div class="card-content-one">
+                    <h3>INTERCÂMBIO DE FÉRIAS</h3>
+                    <p>iworld oferece de intercâmbio de férias para adolescentes, em grupo ou individualmente.</p>
+                    <a href="" class="btn-one">Veja mais</a>
+                </div>
+            </div>
+            <div class="card-one">
+                <img src="./assets/img/graduação.webp" alt="img">
+                <div class="card-content-one">
+                    <h3>GRADUAÇÃO NO EXTERIOR</h3>
+                    <p>iworld oferece de intercâmbio de férias para adolescentes, em grupo ou individualmente.</p>
+                    <a href="" class="btn-one">Veja mais</a>
+                </div>
+            </div>
+            <div class="card-one">
+                <img src="./assets/img/cursoslivres2.0.webp" alt="img">
+                <div class="card-content-one">
+                    <h3>CURSOS LIVRES</h3>
+                    <p>iworld oferece de intercâmbio de férias para adolescentes, em grupo ou individualmente.</p>
+                    <a href="" class="btn-one">Veja mais</a>
+                </div>
+
+            </div>
+            <div class="card-one">
+                <img src="./assets/img/Work.webp" alt="img">
+                <div class="card-content-one">
+                    <h3>WORK AND TRAVEL</h3>
+                    <p>iworld oferece de intercâmbio de férias para adolescentes, em grupo ou individualmente.</p>
+                    <a href="" class="btn-one">Veja mais</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fixed">
+            <div class="content-fixed">
+                <!-- <h1>fexed Background</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid eum error voluptatibus harum. Aliquam amet consectetur architecto velit nostrum veritatis nesciunt voluptatem consequuntur at sint. Ad id cum autem amet, nemo atque iste. Ad deleniti voluptas fuga incidunt perspiciatis.</p> -->
+
+            </div>
+
+        </div>
+        <div class="container-imagem"></div>
+    </section>
+
+    <section>
+        <h3 class="Sub-title-two">PRINCIPAIS OPÇÕES DE PAÍSES:</h3>
+        <div id="card-area-two">
+            <div class="wrapper-two">
+                <div class="box-area-two">
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/dubaitwo.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Dubai</h3>
+                            <p class="p-two"> Dubai, um dos sete emirados dos Emirados Árabes Unidos, é conhecida por
+                                sua modernidade
+                                e luxo1.
+                                Localizada no Golfo Pérsico, tem clima o desértico.</p><a class="a-two" href="#">Ver
+                                mais +</a>
+                        </div>
+                    </div>
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/irlandatwo.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Irlanda</h3>
+                            <p class="p-two"> A Irlanda é um país europeu, localizado na ilha homônima. Possui clima
+                                temperado, relevo
+                                de planícies e
+                                montanhas, e é banhada pelo Atlântico Norte</p><a class="a-two" href="#">Ver mais +</a>
+                        </div>
+                    </div>
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/reinounido.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Inglaterra</h3>
+                            <p class="p-two">A Inglaterra, parte do Reino Unido, está localizada na ilha da
+                                Grã-Bretanha. Com
+                                população de
+                                aproximadamente 56 milhões, sua capital é Londres. </p><a class="a-two" href="#">Ver
+                                mais +</a>
+                        </div>
+                    </div>
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/canadatwo.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Canadá</h3>
+                            <p class="p-two"> Dubai, um dos sete emirados dos Emirados Árabes Unidos, é conhecida por
+                                sua modernidade
+                                e luxo1.
+                                Localizada no Golfo Pérsico, tem clima o desértico.</p><a class="a-two" href="#">Ver
+                                mais +</a>
+                        </div>
+                    </div>
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/australiatwo.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Australia</h3>
+                            <p class="p-two">Austrália, ilha e continente, localizada no hemisfério sul. Capital é
+                                Canberra. Sexto
+                                maior país do mundo. </p><a class="a-two" href="#">Ver mais +</a>
+                        </div>
+                    </div>
+                    <div class="box-two">
+                        <img alt="" src="./assets/img/usatwo.jpg">
+                        <div class="overlay-two">
+                            <h3 class="h3-two">Estados Unidos</h3>
+                            <p class="p-two">Os Estados Unidos, localizados na América do Norte, são a maior potência
+                                mundial. Possuem
+                                uma população de aproximadamente 326,7 milhões de habitantes.</p><a class="a-two"
+                                href="#">Ver mais +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Btn-Card">
+                    <button id="Prev-Card" onclick="scrollCarousel(-1)">&lt;</button>
+                    <button id="Next-Card" onclick="scrollCarousel(1)">&gt;</button>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <h3 class="sub-tetle-Three">FEEDBACKS:</h3>
+        <div class="testimonials">
+            <div class="container-feedback">
+                <div class="section-header">
+                    <h2 class="title">Feedbacks</h2>
+                </div>
+                <div class="testimonials-content">
+                    <div class="swiper testimonials-slider js-testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./assets/img/Rafaella.jpeg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Rafaella Anjos</h3>
+                                        <span class="job">Analista de Operação Jr</span>
+                                    </div>
+                                </div>
+                                <p class="Feedback-comment">As viagens de intercâmbio são transformadoras, ampliam
+                                    horizontes, enriquecem culturas e proporcionam experiências inesquecíveis. Recomendo
+                                    muito!</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./assets/img/Junior.jpeg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Júnior Seven</h3>
+                                        <span class="job">Analista de Redes Jr</span>
+                                    </div>
+                                </div>
+                                <p class="Feedback-comment">Intercâmbio oferece aprendizado intenso, conexões globais,
+                                    crescimento pessoal e memórias duradouras. Uma experiência verdadeiramente
+                                    enriquecedora!</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./assets/img/marcelo.jpeg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Marcelo Agusto</h3>
+                                        <span class="job">analise de desenvolvimento </span>
+                                    </div>
+                                </div>
+                                <p class="Feedback-comment">Intercâmbio é enriquecedor, amplia perspectivas, desenvolve
+                                    habilidades, cria amizades internacionais e proporciona aventuras únicas.
+                                    Inesquecível!</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./assets/img/Miguel.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Miguel Godoy</h3>
+                                        <span class="job">web developer</span>
+                                    </div>
+                                </div>
+                                <p class="Feedback-comment">Intercâmbio transforma vidas, expande horizontes, promove
+                                    autoconhecimento e cria laços culturais. Uma experiência extraordinária!</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./assets/img/Pedro.jpeg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Pedro Aloia</h3>
+                                        <span class="job">Estudante</span>
+                                    </div>
+                                </div>
+                                <p class="Feedback-comment">Viagens de intercâmbio são imersivas, ampliam conhecimentos,
+                                    fortalecem habilidades linguísticas e proporcionam vivências culturais únicas.</p>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination js-testimonials-pagination"></div>
+                </div>
+            </div>
+    </section>
+    <section class="section-form">
+        <div class="contact" id="contact">
+            <div class="contact-text">
+                <!-- <h2>Conta<span>to</span>s</h2>
+                <h4>IWOLRD intercâmbio
+                </h4> -->
+
+                <div class="list">
+                    <!-- <li><a href="#">(34) 99712-8798</a></li>
+                    <li><a href="#">iworld.intercambio@gmail.com</a></li> -->
+
+                </div>
+
+                <div class="contact-icons">
+                    <!-- <a href="https://wa.me/5511954326376?text=Ol%C3%A1%2C+tudo+bem%3F"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://github.com/IsaacJunior66"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/isaac-j%C3%BAnior-911114247/"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/isaac-j%C3%BAnior-911114247/"><i class='bx bxl-gmail'></i></a> -->
+                </div>
+
+            </div>
+            <div class="contact-form">
+                <h2 class="orcamento">FAÇA SEU ORÇAMENTO</h2>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Nome completo *" autocomplete="off" required>
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="exemplo@gmail.com *" autocomplete="off" required>
+                    <label>telefone</label>
+                    <input type="number" name="phone" placeholder="012345678910 *" autocomplete="off" required>
+                    <label>Mensagem</label>
+                    <textarea name="message" id="" cols="35" rows="8" placeholder="Como posso ajudá-lo?"
+                        required></textarea>
+                    <button class="submit" type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="0d8918a7-3273-434a-8649-5c73e4a53362">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+                </form>
+                <div class="maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7086781881917!2d-46.62621523526237!3d-23.507000381680996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1716567263320!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div id="div_fixa" class="flutuar" data-shrink="yes">
+
+            <a href="" target="_blank">
+
+                <div class="flex_itens">
+                    <a href="https://wa.me/5534997128798?text=Ol%C3%A1%2C+Tudo+bem%3F" target="_blank"><img
+                            src="./assets/image/whatsapp.png" alt="Ícone do WhatsApp"></a>
+                    <!-- <span>Converse comigo</span> -->
+                </div>
+
+
+            </a>
+        </div>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h3>(34) 99712-8798 <a href="https://www.linkedin.com/in/isaac-j%C3%BAnior-911114247/"><i
+                            class='bx bx-phone-call'></i></a> </h3>
+                <p>iworld.intercambio@gmail.com</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas soluções de notícias
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 All Rights Reserved - iWorld Intercâmbio Viagens Ltda - CNPJ - 57.174.776/0003-85.
+        </div>
+    </footer>
+
+
+
+    
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "en", "es"], "globe_color": "#66aaff", "wrapper_selector": ".gtranslate_wrapper", "horizontal_position": "right", "vertical_position": "top", "alt_flags": { "en": "usa", "pt": "brazil" }, "globe_size": 40 }</script>
+    <script src="./assets/JS/login.js"></script>
+    <script src="./assets/JS/mobileMenu.js"></script>
+    <script src="./assets/JS/app.js"></script>
+    <script src="./assets/JS/script.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/JS/feedback-card.js"></script>
+    <script src="./assets/JS/highschool.js"></script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+</body>
+
+</html>

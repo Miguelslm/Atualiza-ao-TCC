@@ -1,0 +1,75 @@
+.Sub-title {
+    color: #0c1129;
+    position: relative;
+    top: 90px;
+    left: 60px;
+    font-size: 2rem;
+
+}
+
+.card-container-one{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+}
+.card-one{
+    width: 325px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    
+  
+}
+ .card-one:hover {
+    
+    background-color: #fff;
+    
+}
+
+.card-one img{
+    width: 100%;
+    height: 250px;
+}
+.card-content-one{
+    padding: 16px;
+}
+.card-content-one h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    color: #000033;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.card-content-one p {
+    color: #d3d0d0;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #333;
+   
+   
+}
+.card-content-one .btn-one{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000033d8;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .Sub-title {
+        text-align: center; /* Alinha o texto ao centro */
+        top: 50px;
+        left: 0; /* Define a esquerda como 0 para centralizar */
+        width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
+    }
+}

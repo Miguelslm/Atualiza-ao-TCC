@@ -1,0 +1,63 @@
+.carousel-container-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    color: black;
+}
+
+.carousel-card {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.712);
+    min-width: 250px;
+    margin: 0 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateX(10px);
+}
+
+.card-image img {
+    width: 60px;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    color: #555;
+}
+
+
+/* Responsividade para telas menores (celulares) */
+@media only screen and (max-width: 600px) {
+    .carousel-card {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+        margin: 20px 0;
+    }
+
+    .navigation-buttons-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+
+.sub-tetle-Three {
+    color: #0c1129;
+    position: relative;
+    top: 55px;
+    left: 60px;
+    font-size: 2rem;
+}
+
+.container-feedback {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 15px;
+    background-color:#202020;
+}
+
+/* .section-header */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .title {
+    font-size: 0px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #0c1129;
+    line-height: 1.2;
+}
+
+/* Testimonials */
+
+.testimonials {
+    padding: 100px 0;
+}
+
+.testimonials-item {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.testimonials-item .info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-item img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonials-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+}
+
+.testimonials .job {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 19%);
+}
+
+.testimonials-item p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 0%);
+}
+
+.testimonials-item .rating {
+    margin-top: 15px;
+    font-size: 16px;
+    color: hsl(36, 88%, 66%)
+}
+
+.testimonials-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.Feedback-comment {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .sub-tetle-Three {
+        text-align: center; /* Alinha o texto ao centro */
+        top: 50px;
+        left: 0; /* Define a esquerda como 0 para centralizar */
+        width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
+    }
+}
