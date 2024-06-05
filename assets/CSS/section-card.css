@@ -1,162 +1,134 @@
-    .Sub-title-two {
-        color: #0c1129;
-        position: relative;
-        top: 110px;
-        left: 60px;
-        font-size: 2rem;
-    }
+.Sub-title-two {
+    color: #0c1129;
+    position: relative;
+    top: 110px;
+    left: 60px;
+    font-size: 2rem;
+}
 
-    .wrapper-two {
-        padding: 80px 3%;
-        position: relative;
-        top: 70px;
-    }
+.wrapper-two {
+    padding: 80px 3%;
+    position: relative;
+    top: 70px;
+}
 
-    #card-area-two {
-        padding: 0px 0;
-    }
+#card-area-two {
+    padding: 0px 0;
+}
 
+.box-area-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas */
+    grid-gap: 30px;
+    margin-top: 0px;
+}
+
+.box-two {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.box-two img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-two {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #1c1c1c77 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: padding 0.5s;
+    padding-bottom: 20px;
+}
+
+.overlay-two .h3-two {
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #f1683a;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+.overlay-two .p-two {
+    margin: 10px 0;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+}
+
+.overlay-two .a-two {
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    background: #f1683a;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+}
+
+.box-two:hover img {
+    transform: scale(1.1);
+}
+
+.box-two:hover .overlay-two {
+    padding-bottom: 60px;
+}
+
+.box-two:hover .h3-two {
+    transform: translateY(-160px);
+}
+
+.box-two:hover .p-two,
+.box-two:hover .a-two {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 900px) {
     .box-area-two {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 30px;
-        margin-top: 0px;
+        grid-template-columns: repeat(2, 1fr); /* Define duas colunas em telas menores */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box-area-two {
+        grid-template-columns: repeat(1, 1fr); /* Define uma coluna em telas menores */
     }
 
-    .box-two {
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    .Sub-title-two {
+        text-align: center; /* Alinha o texto ao centro */
+        top: 50px;
+        left: 0; /* Define a esquerda como 0 para centralizar */
+        width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
     }
-
-    .box-two img {
-        width: 100%;
-        border-radius: 10px;
-        display: block;
-        transition: transform 0.5s;
-        height: 40vh;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .overlay-two {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(transparent, #1c1c1c77 58%);
-        border-radius: 10px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 0 40px;
-        text-align: center;
-        font-size: 14px;
-        transition: padding 0.5s;
-        padding-bottom: 20px;
-    }
-
-    .overlay-two .h3-two {
-        font-weight: 500;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 30px;
-        letter-spacing: 2px;
-        color: #f1683a;
-        position: absolute;
-        bottom: 30px;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        transition: transform 0.5s;
-    }
-
-    .overlay-two .p-two {
-        margin: 10px 0;
-        color: #fff;
-        opacity: 0;
-        transition: opacity 0.5s, transform 0.5s;
-        transform: translateY(20px);
-    }
-
-    .overlay-two .a-two {
-        margin-top: 10px;
-        color: #fff;
-        text-decoration: none;
-        font-size: 14px;
-        background: #f1683a;
-        border-radius: 50px;
-        text-align: center;
-        padding: 5px 15px;
-        opacity: 0;
-        transition: opacity 0.5s, transform 0.5s;
-        transform: translateY(20px);
-    }
-
-    .box-two:hover img {
-        transform: scale(1.1);
-    }
-
-    .box-two:hover .overlay-two {
-        padding-bottom: 60px;
-    }
-
-    .box-two:hover .h3-two {
-        transform: translateY(-160px);
-    }
-
-    .box-two:hover .p-two,
-    .box-two:hover .a-two {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-    .Btn-Card {
-        display: flex;
-        justify-content: end;
-        width: 80%;
-        margin: 20px auto 0;
-    }
-
-    #Prev-Card {
-        background-color: rgba(0, 0, 0, 0.185);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        padding: 10px 20px;
-        cursor: pointer;
-        margin: 0 5px;
-        transition: .5s;
-    }
-
-    #Prev-Card:hover {
-        background-color: #f1683a;
-    }
-
-    #Next-Card {
-        background-color: rgba(0, 0, 0, .185);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        padding: 10px 20px;
-        cursor: pointer;
-        margin: 0 5px;
-        transition: .5s;
-    }
-
-    #Next-Card:hover {
-        background-color: #f1683a;
-    }
-
-    @media screen and (max-width: 600px) {
-        .Sub-title-two  {
-            text-align: center; /* Alinha o texto ao centro */
-            top: 50px;
-            left: 0; /* Define a esquerda como 0 para centralizar */
-            width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
-        }
-    }
+}

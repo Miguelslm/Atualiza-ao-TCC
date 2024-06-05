@@ -42,7 +42,7 @@
     font-size: 20px;
     margin-bottom: 8px;
     letter-spacing: 2px;
-    color: #000033;
+    color: #0c1129;
     font-family: 'Bebas Neue', sans-serif;
 }
 .card-content-one p {
@@ -56,7 +56,7 @@
 .card-content-one .btn-one{
     display: inline-block;
     padding: 8px 16px;
-    background-color: #000033d8;
+    background-color: #0c1129;
     text-decoration: none;
     border-radius: 4px;
     margin-top: 16px;
