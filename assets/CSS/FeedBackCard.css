@@ -11,7 +11,7 @@
     max-width: 90%;
     margin: auto;
     padding: 0 15px;
-    background-color:#202020;
+    
 }
 
 /* .section-header */
@@ -38,6 +38,8 @@
     background-color: hsl(0, 0%, 100%);
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .testimonials-item .info {
@@ -92,7 +94,7 @@
 .testimonials .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
-    background-color: hsl(0, 0%, 100%);
+    background-color:#f1683a;
 }
 
 
