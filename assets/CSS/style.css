@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url(./section-card-one.css);
-@import url(./highschool-card.css);
+@import url(./highschool-card.css); /* tem algo dando conflito */
 @import url(./section-fixed.css);
-@import url(./section-card.css);
-@import url(./FeedBackCard.css);
+@import url(./section-card.css);/* tem algo dando conflito */
+@import url(./FeedBackCard.css);/* tem algo dando conflito */
 @import url(./section-form.css);
 @import url(./footer.css);
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
 
 body {
@@ -33,7 +33,7 @@ header {
     display: block;
     justify-content: space-between;
     align-items: center;
-    background:  #0c1129; /*add backgroud*/
+    background:  #0c1129; 
     z-index: 100;
 }
 
@@ -53,10 +53,8 @@ header {
 }
 
 .nav-list {
-
     display: flex;
     align-items: center;
-    
 }
 
 .nav-list ul {
@@ -74,7 +72,7 @@ header {
     font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
-    position: relative; /* Adicionado para permitir o posicionamento do pseudo-elemento ::after */
+    position: relative; 
 }
 
 .nav-link::after {
@@ -103,13 +101,18 @@ header {
     font-size: 1.7em;
 }
 
-.login-button button {
-    top: 4px;
-    right: 170px;
-    position: relative;
-    display: inline-flex;
+.login-button {
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 300px; 
+    height: auto; 
+}
+
+.login-button button {
+    margin-top: 4px;
+    margin-right: 8px; 
     width: 150px;
     height: 45px;
     background: #ec6f45;
@@ -117,22 +120,19 @@ header {
     border-radius: .8rem;
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600; 
     font-size: 0.9em;
-    font-weight: 600;
     letter-spacing: .1rem;
-    color: #fff;
-    z-index: 1;
     overflow: hidden;
-    transition: background-color 0.5s, color 0.5s; 
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.login-button button:hover{
-    background: #f1683a; 
-    color: #162938; 
+.login-button button:hover {
+    background: #f1683a;
+    color: #162938;
 }
 
-.login-button button::before{
+.login-button button::before {
     position: absolute;
     content: '';
     top: 0;
@@ -141,12 +141,11 @@ header {
     height: 100%;
     background: #f1683a;
     z-index: -1;
-    transition: width 0.5s; 
+    transition: width 0.5s;
 }
 
-
-.login-button button:hover::before{
-    width: 100%; 
+.login-button button:hover::before {
+    width: auto;
 }
 
 /* .login-button button{
@@ -316,7 +315,7 @@ header {
 }
 
 .btn {
-    
+
     width: 100%;
     height: 45px;
     background: #f1683a;
@@ -327,8 +326,6 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 500;
-    
-
 
 }
 
@@ -360,7 +357,7 @@ header {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    z-index: 1; /*add z-index menor que navbar*/
+    z-index: 1; 
 }
 
 .carousel .list .item {
@@ -453,13 +450,13 @@ header {
     text-align: center;
     z-index: 1;
     overflow: hidden;
-    transition: background-color 0.5s, color 0.5s; /* Adiciona a transição para a cor de fundo e a cor do texto */
+    transition: background-color 0.5s, color 0.5s; 
     
 }
 
 .buttons .btnLogin-popup:hover {
-    background: #f1683a; /* Nova cor de fundo ao passar o mouse */
-    color: #162938; /* Nova cor do texto ao passar o mouse */
+    background: #f1683a; 
+    color: #162938; 
 }
 
 .buttons .btnLogin-popup::before {
@@ -471,11 +468,11 @@ header {
     height: 100%;
     background: #f1683a;
     z-index: -1;
-    transition: width 0.5s; /* Adiciona a transição para a largura do elemento ::before */
+    transition: width 0.5s; 
 }
 
 .buttons .btnLogin-popup:hover::before {
-    width: 100%; /* Altera a largura do elemento ::before ao passar o mouse */
+    width: 100%; 
 }
 
 
@@ -810,11 +807,7 @@ header {
 }
 
 /*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -866,8 +859,6 @@ img {
 
 /* translate */
 
-
-
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -904,7 +895,6 @@ img {
 
 .nav__name {
   font-size: var(--tiny-font-size);
-  /* display: none;*/ /* Minimalist design, hidden labels */
 }
 
 .nav__icon {
@@ -936,8 +926,6 @@ img {
 }
 
 /*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
 @media screen and (max-width: 320px) {
   .nav__name {
     display: none;
@@ -960,7 +948,7 @@ img {
     padding: 7rem 0 2rem;
   }
   .nav {
-    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+    height: calc(var(--header-height) + 1.5rem); 
   }
   .nav__img {
     display: none;
@@ -970,7 +958,7 @@ img {
   }
   .nav__name {
     font-size: var(--normal-font-size);
-    /* display: block; */ /* Minimalist design, visible labels */
+   
   }
   
 
@@ -978,7 +966,7 @@ img {
     color:#f1683a;
   }
 
-  /* First design, remove if you choose the minimalist design */
+
   .active-link::before {
     content: '';
     position: absolute;
@@ -989,13 +977,9 @@ img {
     border-radius: 50%;
   }
 
-  /* Minimalist design */
-  /* .active-link::before{
-      bottom: -.75rem;
-  } */
+  
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;

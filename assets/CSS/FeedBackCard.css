@@ -3,7 +3,7 @@
     color: #0c1129;
     position: relative;
     top: 55px;
-    left: 60px;
+    /* left: 60px; */ /* causa do conflito */
     font-size: 2rem;
 }
 
