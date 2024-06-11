@@ -13,14 +13,23 @@
     margin: 0;
 }
 
+:root {
+    --back-color:#eee;
+    --main-color:#0c1129;
+    --segund-color:#f1683a;
+    --textone-color:#fff;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     box-sizing: border-box;
-    color: #eee;
-    background-color: #eee;
+    color: var(--back-color);
+    background-color: var(--back-color);
 
 }
 
@@ -33,7 +42,7 @@ header {
     display: block;
     justify-content: space-between;
     align-items: center;
-    background:  #0c1129; 
+    background:  var(--main-color); 
     z-index: 100;
 }
 
@@ -70,7 +79,7 @@ header {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #fff;
+    color: var(--text1-color);
     font-weight: 400;
     position: relative; 
 }
@@ -85,7 +94,7 @@ header {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #f1683a;
+    background: var(--segund-color);
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -113,10 +122,10 @@ header {
     width: 150px;
     height: 45px;
     background: #ec6f45;
-    border: 2px solid #fff;
+    border: 2px solid var(--textone-color);
     border-radius: .8rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--textone-color);
     font-weight: 600; 
     font-size: 0.9em;
     letter-spacing: .1rem;
@@ -125,7 +134,7 @@ header {
 }
 
 .login-button button:hover {
-    background: #f1683a;
+    background: var(--segund-color);
     color: #162938;
 }
 
@@ -136,7 +145,7 @@ header {
     left: 0;
     width: 0;
     height: 100%;
-    background: #f1683a;
+    background: var(--segund-color);
     z-index: -1;
     transition: width 0.5s;
 }
@@ -224,7 +233,7 @@ header {
     right: 0;
     width: 45px;
     height: 45px;
-    background: #fff;
+    background: var(--textone-color);
     font-size: 2em;
     color: #162938;
     display: flex;
@@ -237,7 +246,7 @@ header {
 
 .form-box h2 {
     font-size: 2em;
-    color: #fff;
+    color: var(--textone-color);
     text-align: center;
 }
 
@@ -245,7 +254,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--textone-color);
     margin: 30px 0;
 }
 
@@ -255,7 +264,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #fff;
+    color: var(--textone-color);
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -274,7 +283,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #fff;
+    color: var(--textone-color);
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -283,13 +292,13 @@ header {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #fff;
+    color: var(--textone-color);
     line-height: 57px;
 }
 
 .remember-forgot {
     font-size: .9em;
-    color: #fff;
+    color: var(--textone-color);
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -298,12 +307,12 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color: #fff;
+    accent-color: var(--textone-color);
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #fff;
+    color: var(--textone-color);
     text-decoration: none;
 }
 
@@ -314,27 +323,27 @@ header {
 .btn {
     width: 100%;
     height: 45px;
-    background: #f1683a;
+    background: var(--segund-color);
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #fff;
+    color: var(--textone-color);
     font-weight: 500;
 }
 
 
 .login-register {
     font-size: .9em;
-    color: #fff;
+    color: var(--textone-color);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
-    color: #fff;
+    color: var(--textone-color);
     text-decoration: none;
     font-weight: 600;
 }
@@ -377,7 +386,7 @@ header {
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--textone-color);
     text-shadow: 0 5px 10px #0004;
 }
 
@@ -397,7 +406,7 @@ header {
 }
 
 .carousel .list .item .topic {
-    color: #f1683a;
+    color: var(--segund-color);
 }
 
 .carousel .list .item .buttons {
@@ -410,7 +419,7 @@ header {
 
 .carousel .list .item .buttons button {
     border: none;
-    background-color: #eee;
+    background-color: var(--back-color);
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
@@ -418,8 +427,8 @@ header {
 
 .carousel .list .item .buttons button:nth-child(2) {
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
+    border: 1px solid var(--textone-color);
+    color: var(--back-color);
    
 }
 /* .description{
@@ -437,11 +446,11 @@ header {
     width: 130px;
     height: 40px;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--textone-color);
     font-size: 1em;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: #fff;
+    color: var(--textone-color);
     text-align: center;
     z-index: 1;
     overflow: hidden;
@@ -450,7 +459,7 @@ header {
 }
 
 .buttons .btnLogin-popup:hover {
-    background: #f1683a; 
+    background: var(--segund-color); 
     color: #162938; 
 }
 
@@ -461,7 +470,7 @@ header {
     left: 0;
     width: 0;
     height: 100%;
-    background: #f1683a;
+    background:var(--segund-color);
     z-index: -1;
     transition: width 0.5s; 
 }
@@ -498,7 +507,7 @@ header {
 }
 
 .thumbnail .item .content {
-    color: #fff;
+    color: var(--segund-color);
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -532,14 +541,14 @@ header {
     border-radius: 50%;
     background-color: #eee4;
     border: none;
-    color: #fff;
+    color: var(--textone-color);
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
 }
 
 .arrows button:hover {
-    background-color: #f1683a;
+    background-color: var(--segund-color);
    
     
 }
@@ -640,7 +649,7 @@ header {
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color: var(--segund-color);
     left: 0;
     top: 0;
 }
@@ -894,13 +903,13 @@ img {
 
 .nav__icon {
   font-size: 1.5rem;
-  color: #f1683a;
+  color: var(--segund-color);
 }
 
 /*Active link*/
 .active-link {
   position: relative;
-  color: #f1683a;
+  color: var(--segund-color);
   transition: .3s;
 }
 
@@ -958,7 +967,7 @@ img {
   
 
   .nav__link:hover {
-    color:#f1683a;
+    color:var(--segund-color);
   }
 
 
