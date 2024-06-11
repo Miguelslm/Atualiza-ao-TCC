@@ -394,6 +394,9 @@ header {
     font-weight: bold;
     letter-spacing: 10px;
 }
+.title{
+    color: var(--textone-color);
+}
 
  .carousel .list .item .title{
     font-size: 3rem;
