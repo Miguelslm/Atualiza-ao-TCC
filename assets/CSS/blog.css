@@ -1,0 +1,130 @@
+/* .blog__container {
+    background-color: var(--back-color);
+    margin-top: 10px;
+}
+
+.breadcrumb__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.breadcrumb__subtitle{
+    color: var(--main-color);
+}
+
+.blog__post {
+    grid-template-columns: .8fr 1.2fr;
+    column-gap: 2rem;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+
+.blog__img {
+    border-radius: .8rem;
+    height: 150px;
+    width: auto;
+}
+
+.blog__details {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.blog__title {
+    font-size: 30px;
+    font-weight: auto;
+    margin-bottom: 50px;
+    color: var(--main-color);
+}
+
+.blog__date {
+    font-size: 10px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.read__more {
+    text-align: right;
+} */
+
+/*===============  ===============*/
+
+.blog__post {
+    display: grid; /* Adiciona display grid */
+    grid-template-columns: auto 1fr; /* Definindo as colunas do grid */
+    column-gap: 2rem;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.breadcrumb__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    bottom: 20px;
+    font-size: 30px;
+}
+
+/* .breadcrumb__subtitle{
+    color: var(--main-color);
+} */
+
+.blog__post {
+    grid-template-columns: .8fr 1.2fr;
+    column-gap: 2rem;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+
+.blog__img {
+    border-radius: .8rem;
+    height: 200px;
+    width: auto;
+}
+
+.blog__details {
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 5px;
+    color: var(--main-color);
+    top: 30px;
+}
+
+.blog__title {
+    position: relative;
+    font-size: 30px;
+    font-weight: auto;
+    top: 30px;
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+.blog__date {
+    font-size: 10px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.read__more {
+    text-align: right;
+}

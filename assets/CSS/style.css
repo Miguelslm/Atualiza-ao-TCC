@@ -6,6 +6,7 @@
 @import url(./section-card.css);/* tem algo dando conflito */
 @import url(./FeedBackCard.css);/* tem algo dando conflito */
 @import url(./section-form.css);
+@import url(./blog.css);
 @import url(./footer.css);
 * {
     box-sizing: border-box;
@@ -19,8 +20,6 @@
     --segund-color:#f1683a;
     --textone-color:#fff;
 }
-
-
 
 body {
     margin: 0;
