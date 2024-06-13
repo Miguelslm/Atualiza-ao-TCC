@@ -1,0 +1,41 @@
+.about__container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 3rem; 
+}
+
+.about__img {
+    width: 500px;
+}
+
+.about__data {
+    position: relative;
+    top: -30px;
+    max-width: calc(50% - 3rem); 
+
+}
+
+.about__description {
+    font-size: 15px;
+    color: var(--main-color);
+    text-align: left; 
+}
+
+.about__details {
+    color: var(--main-color);
+}
+
+.about__details-description {
+    position: relative;
+    top: 30px;
+    font-size: 15px;
+}
+
+.about__details-icon {
+    position: relative;
+    top: 8px;
+    font-size: 1rem;
+    color: var(--first-color);
+    margin-right: 0.5rem;
+}
