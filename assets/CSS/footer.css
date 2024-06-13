@@ -65,7 +65,7 @@
 }
 
 main {
-    height: 80vh;
+    height: 160vh;
 }
 
 footer {
@@ -196,6 +196,11 @@ footer {
     /* height: 140px; */
     padding: 1.5rem;
     font-weight: 100;
+}
+
+.gglobe {
+    position: relative;
+    top: -35px;
 }
 
 @media screen and (max-width: 768px) {

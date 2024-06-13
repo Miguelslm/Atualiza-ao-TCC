@@ -58,6 +58,11 @@
 
 /*===============  ===============*/
 
+.blog__container {
+    background-color: var(--back-color);
+    margin-top: 10px;
+}
+
 .blog__post {
     display: grid; /* Adiciona display grid */
     grid-template-columns: auto 1fr; /* Definindo as colunas do grid */
@@ -71,12 +76,13 @@
 }
 
 .breadcrumb__title {
+    padding: 30px;
     position: relative;
     display: flex;
     justify-content: center;
     color: var(--main-color);
     bottom: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* .breadcrumb__subtitle{
@@ -103,9 +109,9 @@
 
 .blog__details {
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     color: var(--main-color);
     top: 30px;
 }
@@ -127,4 +133,32 @@
 
 .read__more {
     text-align: right;
+}
+.pagination{
+    padding: 5px;
+    position: relative;
+    left: 750px;
+    /* background-color: red; */
+}
+
+.current {
+    background-color: var(--segund-color);
+    border-radius: 100%;
+    color:var(--main-color);
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    line-height: 40px; /* Ajusta a altura da linha para centralizar o texto */
+    width: 40px; /* Define a largura do elemento */
+    height: 40px; /* Define a altura do elemento */
+    display: inline-block; /* Garante que o elemento seja inline-block para aplicar width e height */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+span {
+    margin: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.pagination__icon {
+    color: black;
 }
