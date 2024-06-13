@@ -896,6 +896,8 @@ img {
 }
 
 .nav__list {
+    position: relative;
+    top: 15px;
   justify-content: space-around;
 }
 

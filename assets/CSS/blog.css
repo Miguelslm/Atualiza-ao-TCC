@@ -58,6 +58,10 @@
 
 /*===============  ===============*/
 
+/* .man{
+    margin-bottom: 50px;
+} */
+
 .blog__container {
     background-color: var(--back-color);
     margin-top: 10px;
@@ -135,7 +139,7 @@
     text-align: right;
 }
 .pagination{
-    padding: 5px;
+    padding: 50px;
     position: relative;
     left: 750px;
     /* background-color: red; */
@@ -153,6 +157,11 @@
     text-align: center; /* Centraliza o texto horizontalmente */
 }
 
+.current:hover{
+    background-color: #f1511c;
+    transition: transform .5s;
+}
+
 span {
     margin: 15px;
     font-size: 20px;
@@ -161,4 +170,55 @@ span {
 
 .pagination__icon {
     color: black;
+}
+
+/* Para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+    .blog__post {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        margin-left: 20px; /* Reduz a margem esquerda */
+    }
+
+    .blog__container {
+        margin: 10px 20px; /* Reduz a margem no topo e nos lados */
+    }
+
+    .breadcrumb__title {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        padding: 20px; /* Reduz o preenchimento */
+    }
+
+    .blog__img {
+        width: 100%; /* Ajusta a largura da imagem para preencher a coluna */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .blog__details,
+    .blog__title {
+        top: 0; /* Remove o deslocamento vertical */
+    }
+
+    .pagination {
+        left: auto; /* Remove o posicionamento à esquerda */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+}
+
+/* Para telas maiores que 768px */
+@media only screen and (min-width: 769px) {
+    .blog__container {
+        padding: 0 50px; /* Adiciona preenchimento nos lados */
+    }
+
+    .blog__post {
+        grid-template-columns: auto 1fr; /* Reverte para o layout original */
+        margin-left: 100px; /* Retorna a margem esquerda original */
+    }
+
+    .breadcrumb__title {
+        font-size: 40px; /* Retorna o tamanho da fonte original */
+        padding: 30px; /* Retorna o preenchimento original */
+    }
+
+    /* Outros estilos para telas maiores */
 }
