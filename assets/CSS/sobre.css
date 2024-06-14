@@ -1,5 +1,5 @@
 /* main {
-    height: 120vh;
+    height: 100%;
 } */
 
 /* .about__title{
@@ -51,12 +51,14 @@
 
 
 .about__title {
-    margin-top: -70px; /* Use margin-top para ajustar o posicionamento */
+    margin-top: -70px; 
 }
+
+
 
 .about__container {
     display: flex;
-    align-items: flex-start; /* Mude para flex-start para alinhar os itens no topo */
+    align-items: flex-start; 
     justify-content: space-between;
     gap: 3rem;
 }
@@ -66,7 +68,7 @@
 }
 
 .about__data {
-    margin-top: 100px; /* Use margin-top para ajustar o posicionamento */
+    margin-top: 100px; 
 }
 
 .about__description {
@@ -87,5 +89,5 @@
     font-size: 1rem;
     color: var(--first-color);
     margin-right: 0.5rem;
-    vertical-align: middle; /* Adicione isso para centralizar o ícone verticalmente */
+    vertical-align: middle; 
 }

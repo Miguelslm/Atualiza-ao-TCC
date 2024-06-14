@@ -62,14 +62,14 @@
     margin-bottom: 50px;
 } */
 
-.blog__container {
+/* .blog__container {
     background-color: var(--back-color);
     margin-top: 10px;
-}
+} */
 
 .blog__post {
-    display: grid; /* Adiciona display grid */
-    grid-template-columns: auto 1fr; /* Definindo as colunas do grid */
+    display: grid; 
+    grid-template-columns: auto 1fr; 
     column-gap: 2rem;
     align-items: center;
     background-color: var(--container-color);
@@ -140,21 +140,24 @@
 }
 .pagination{
     padding: 50px;
-    position: relative;
-    left: 750px;
-    /* background-color: red; */
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
 .current {
     background-color: var(--segund-color);
     border-radius: 100%;
     color:var(--main-color);
-    font-size: 24px; /* Aumenta o tamanho da fonte */
-    line-height: 40px; /* Ajusta a altura da linha para centralizar o texto */
-    width: 40px; /* Define a largura do elemento */
-    height: 40px; /* Define a altura do elemento */
-    display: inline-block; /* Garante que o elemento seja inline-block para aplicar width e height */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 24px; 
+    line-height: 40px; 
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    position: relative;
+    top: -25px;
 }
 
 .current:hover{
@@ -166,6 +169,8 @@ span {
     margin: 15px;
     font-size: 20px;
     color: black;
+    position: relative;
+    top: -15px;
 }
 
 .pagination__icon {
