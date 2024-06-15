@@ -81,12 +81,12 @@
 
 .breadcrumb__title {
     padding: 30px;
-    position: relative;
     display: flex;
     justify-content: center;
     color: var(--main-color);
     bottom: 20px;
     font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* .breadcrumb__subtitle{
@@ -118,6 +118,7 @@
     margin-bottom: 15px;
     color: var(--main-color);
     top: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog__title {
@@ -127,6 +128,7 @@
     top: 30px;
     margin-bottom: 40px;
     color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog__date {
@@ -139,7 +141,7 @@
     text-align: right;
 }
 .pagination{
-    padding: 50px;
+    padding: 10px;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -157,7 +159,7 @@
     justify-content: center; 
     text-align: center; 
     position: relative;
-    top: -25px;
+    top: -10px;
 }
 
 .current:hover{
@@ -165,7 +167,7 @@
     transition: transform .5s;
 }
 
-span {
+.span__blog {
     margin: 15px;
     font-size: 20px;
     color: black;

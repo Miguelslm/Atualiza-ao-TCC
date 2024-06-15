@@ -50,21 +50,40 @@
 } */
 
 
-.about__title {
-    margin-top: -70px; 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para alinhar o conteúdo verticalmente */
+    width: 100%; /* Para garantir que o contêiner ocupe toda a largura da página */
+    position: relative;
+    right: 220px;
+}
+.breadcrumb__title{
+    position: relative;
+    left: 220px;
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
-
+.about__title {
+    margin-top: -90px; 
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+}
 
 .about__container {
     display: flex;
     align-items: flex-start; 
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .about__img {
-    width: 500px;
+    border-radius: 10px;
+    width: 700px;
 }
 
 .about__data {
@@ -72,17 +91,22 @@
 }
 
 .about__description {
-    font-size: 15px;
+    width: 500px;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
     color: var(--main-color);
     text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 3rem; /* Adiciona o espaçamento desejado */
 }
 
 .about__details {
     color: var(--main-color);
+    font-family:'Poppins', sans-serif;       
 }
 
 .about__details-description {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .about__details-icon {

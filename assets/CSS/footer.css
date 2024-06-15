@@ -63,9 +63,9 @@
     letter-spacing: 1px;
 }
 
-main {
-    height: 120vh;
-}
+/* main {
+    height: 150vh;
+} */
 
 footer {
     width: 100%;
@@ -200,7 +200,6 @@ footer {
 
 .gglobe {
     position: relative;
-    top: -35px;
 }
 
 @media screen and (max-width: 768px) {
