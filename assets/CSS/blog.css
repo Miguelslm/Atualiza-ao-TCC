@@ -1,12 +1,15 @@
 
 .Breadcrumb-title {
-    padding: 30px;
     display: flex;
     justify-content: center;
     color: var(--main-color);
-    bottom: 20px;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.Blog-container{
+    margin-top: 2rem;
 }
 
 .Blog-post {
@@ -17,8 +20,7 @@
     background-color: var(--container-color);
     border-radius: 1.2rem;
     padding: 1rem;
-    margin-bottom: 30px;
-    margin-left: 100px;
+    margin-bottom: 3rem;
 }
 
 .Blog-img{
@@ -29,26 +31,25 @@
 
 .Blog-details {
     position: relative;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
-    margin-bottom: 15px;
     color: var(--main-color);
-    top: 30px;
+    top: 1.7rem;
     font-family: 'Poppins', sans-serif;
 }
 
 .Blog-title{
     position: relative;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: auto;
-    top: 30px;
-    margin-bottom: 40px;
+    top: 2rem;
+    margin-bottom: 2rem;
     color: var(--main-color);
     font-family: 'Poppins', sans-serif;
 }
 
 .Blog-date {
-    font-size: 10px;
+    font-size: .7rem;
     color: var(--main-color);
     margin-bottom: 20px;
 }
@@ -56,8 +57,8 @@
 .Read-more {
     text-align: right;
 }
+
 .pagination{
-    padding: 10px;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -85,10 +86,10 @@
 
 .Span-blog {
     margin: 15px;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: black;
     position: relative;
-    top: -15px;
+    top: -1rem;
 }
 
 .Pagination-icon{
