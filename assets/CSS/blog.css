@@ -1,73 +1,15 @@
-/* .blog__container {
-    background-color: var(--back-color);
-    margin-top: 10px;
-}
 
-.breadcrumb__title {
-    position: relative;
+.Breadcrumb-title {
+    padding: 30px;
     display: flex;
     justify-content: center;
     color: var(--main-color);
+    bottom: 20px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.breadcrumb__subtitle{
-    color: var(--main-color);
-}
-
-.blog__post {
-    grid-template-columns: .8fr 1.2fr;
-    column-gap: 2rem;
-    align-items: center;
-    background-color: var(--container-color);
-    border-radius: 1.2rem;
-    padding: 1rem;
-    margin-bottom: 30px;
-    margin-left: 100px;
-}
-
-
-.blog__img {
-    border-radius: .8rem;
-    height: 150px;
-    width: auto;
-}
-
-.blog__details {
-    font-size: 20px;
-    text-align: justify;
-    margin-bottom: 10px;
-    color: var(--main-color);
-}
-
-.blog__title {
-    font-size: 30px;
-    font-weight: auto;
-    margin-bottom: 50px;
-    color: var(--main-color);
-}
-
-.blog__date {
-    font-size: 10px;
-    color: var(--main-color);
-    margin-bottom: 20px;
-}
-
-.read__more {
-    text-align: right;
-} */
-
-/*===============  ===============*/
-
-/* .man{
-    margin-bottom: 50px;
-} */
-
-/* .blog__container {
-    background-color: var(--back-color);
-    margin-top: 10px;
-} */
-
-.blog__post {
+.Blog-post {
     display: grid; 
     grid-template-columns: auto 1fr; 
     column-gap: 2rem;
@@ -79,39 +21,13 @@
     margin-left: 100px;
 }
 
-.breadcrumb__title {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    color: var(--main-color);
-    bottom: 20px;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* .breadcrumb__subtitle{
-    color: var(--main-color);
-} */
-
-.blog__post {
-    grid-template-columns: .8fr 1.2fr;
-    column-gap: 2rem;
-    align-items: center;
-    background-color: var(--container-color);
-    border-radius: 1.2rem;
-    padding: 1rem;
-    margin-bottom: 30px;
-    margin-left: 100px;
-}
-
-
-.blog__img {
+.Blog-img{
     border-radius: .8rem;
     height: 200px;
     width: auto;
 }
 
-.blog__details {
+.Blog-details {
     position: relative;
     font-size: 16px;
     text-align: justify;
@@ -121,7 +37,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.blog__title {
+.Blog-title{
     position: relative;
     font-size: 30px;
     font-weight: auto;
@@ -131,13 +47,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.blog__date {
+.Blog-date {
     font-size: 10px;
     color: var(--main-color);
     margin-bottom: 20px;
 }
 
-.read__more {
+.Read-more {
     text-align: right;
 }
 .pagination{
@@ -167,7 +83,7 @@
     transition: transform .5s;
 }
 
-.span__blog {
+.Span-blog {
     margin: 15px;
     font-size: 20px;
     color: black;
@@ -175,57 +91,58 @@
     top: -15px;
 }
 
-.pagination__icon {
+.Pagination-icon{
     color: black;
 }
 
 /* Para telas menores que 768px */
 @media only screen and (max-width: 768px) {
-    .blog__post {
-        grid-template-columns: 1fr; /* Altera para uma única coluna */
-        margin-left: 20px; /* Reduz a margem esquerda */
+    .Blog-post {
+        grid-template-columns: 1fr; 
+        margin-left: 20px; 
     }
 
-    .blog__container {
-        margin: 10px 20px; /* Reduz a margem no topo e nos lados */
+    .Blog-container {
+        margin: 10px 20px; 
+        position: relative;
+        right: 10px;
     }
 
-    .breadcrumb__title {
-        font-size: 30px; /* Reduz o tamanho da fonte */
-        padding: 20px; /* Reduz o preenchimento */
+    .Breadcrumb-title {
+        font-size: 30px; 
+        padding: 20px; 
     }
 
-    .blog__img {
-        width: 100%; /* Ajusta a largura da imagem para preencher a coluna */
-        height: auto; /* Mantém a proporção da imagem */
+    .Blog-img {
+        width: 100%; 
+        height: auto; 
     }
 
-    .blog__details,
-    .blog__title {
-        top: 0; /* Remove o deslocamento vertical */
+    .Blog-details,
+    .Blog-title {
+        top: 0; 
     }
 
     .pagination {
-        left: auto; /* Remove o posicionamento à esquerda */
-        text-align: center; /* Centraliza o conteúdo */
+        left: auto; 
+        text-align: center; 
     }
 }
 
 /* Para telas maiores que 768px */
 @media only screen and (min-width: 769px) {
-    .blog__container {
-        padding: 0 50px; /* Adiciona preenchimento nos lados */
+    .Blog-container {
+        padding: 0 50px; 
     }
 
-    .blog__post {
-        grid-template-columns: auto 1fr; /* Reverte para o layout original */
-        margin-left: 100px; /* Retorna a margem esquerda original */
+    .Blog-post {
+        grid-template-columns: auto 1fr; 
+        margin-left: 100px; 
     }
 
-    .breadcrumb__title {
-        font-size: 40px; /* Retorna o tamanho da fonte original */
-        padding: 30px; /* Retorna o preenchimento original */
+    .Breadcrumb-title {
+        font-size: 40px; 
+        padding: 30px; 
     }
 
-    /* Outros estilos para telas maiores */
 }
