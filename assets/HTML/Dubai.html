@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>tcc</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Dubai.css">
+    <style>
+        /* Estilos adicionais para a seção de intercâmbio */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto; /* Centraliza horizontalmente */
+        }
+        .info {
+            max-width: 500px;
+            margin-right: 20px;
+        }
+        .info h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .image {
+            flex-shrink: 0;
+        }
+        .image img {
+            border-radius: 8px;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="./assets/image/logoiwolrd.png" alt="logo" id="logot">
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Países</a></li>
+                    <li class="nav-item"><a href="./assets/HTML/blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="./assets/HTML/sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><i class=''></i>ORÇAMENTO</button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+            <div class="login-button">
+                <button><i class='bx bxs-graduation'></i>Área do Aluno</button>
+            </div>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#h" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-book-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bx-briefcase-alt nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#"> Forgot Password?</a>
+                    </div>
+                    <button type="Submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register-">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+                    <button type="Submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Conteúdo centralizado de intercâmbio -->
+    <div class=".Breadcrumb-title">
+        <h1>Paises</h1>
+    </div>
+    <div class="container">
+        <div class="info">
+            <h2>Intercâmbio nos Estados Unidos</h2>
+            <p><strong>Preço do Intercâmbio:</strong> O custo de um programa de intercâmbio nos Estados Unidos pode variar entre $8,000 e $15,000 por semestre, dependendo da instituição e do estado.</p>
+            <p><strong>Custo de Vida:</strong> O custo de vida nos Estados Unidos varia significativamente de acordo com a cidade. Em média, os estudantes gastam entre $1,000 e $2,000 por mês em despesas como moradia, alimentação, transporte e entretenimento.</p>
+            <p>Estudar nos Estados Unidos oferece uma experiência única, com a oportunidade de melhorar o inglês, conhecer uma nova cultura e obter uma educação de qualidade reconhecida mundialmente.</p>
+        </div>
+        <div class="image">
+            <img src="https://via.placeholder.com/250" alt="Imagem de um campus universitário nos EUA">
+        </div>
+    </div>
+
+    <footer>
+
+        <div id="div_fixa" class="flutuar" data-shrink="yes">
+
+            <a href="" target="_blank">
+
+                <div class="flex_itens">
+                    <a href="https://wa.me/5534997128798?text=Ol%C3%A1%2C+Tudo+bem%3F" target="_blank"><img
+                            src="./assets/image/whatsapp.png" alt="Ícone do WhatsApp"></a>
+                    <!-- <span>Converse comigo</span> -->
+                </div>
+
+
+            </a>
+        </div>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h3>(34) 99712-8798 <a href="https://www.linkedin.com/in/isaac-j%C3%BAnior-911114247/"><i
+                            class='bx bx-phone-call'></i></a> </h3>
+                <p>iworld.intercambio@gmail.com</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/iworldios2024/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/iworldcambio" target="_blank" class="footer-link" id="facebook">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas soluções de notícias
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 All Rights Reserved - iWorld Intercâmbio Viagens Ltda - CNPJ - 57.174.776/0003-85.
+        </div>
+    </footer>
+
+
+
+    
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "en", "es"], "globe_color": "#66aaff", "wrapper_selector": ".gtranslate_wrapper", "horizontal_position": "right", "vertical_position": "top", "alt_flags": { "en": "usa", "pt": "brazil" }, "globe_size": 40 }</script>
+    <script src="./assets/JS/login.js"></script>
+    <script src="./assets/JS/mobileMenu.js"></script>
+    <script src="./assets/JS/app.js"></script>
+    <script src="./assets/JS/script.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/JS/feedback-card.js"></script>
+    <script src="./assets/JS/highschool.js"></script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+</body>
+
+</html>
