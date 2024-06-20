@@ -1,16 +1,16 @@
 .Sub-title {
     color: #0c1129;
     position: relative;
-    top: 90px;
-    /* left: 60px; */ /* causa do conflito */
+    top: 5rem;
+    left: 60px; /* causa do conflito */
+    width: 80%;
     font-size: 2rem;
-
 }
 
 .card-container-one{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 100px;
     
 }
@@ -64,12 +64,83 @@
     
 
 }
-
-@media screen and (max-width: 600px) {
+@media (max-width: 1366px) {
     .Sub-title {
-        text-align: center; /* Alinha o texto ao centro */
-        top: 50px;
-        left: 0; /* Define a esquerda como 0 para centralizar */
-        width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
+        left: 40px;
+        font-size: 1.8rem;
+    }
+    .card-one {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .Sub-title {
+        left: 40px;
+        font-size: 1.8rem;
+    }
+    .card-one {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Sub-title {
+        left: 30px;
+        font-size: 1.6rem;
+    }
+    .card-one {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Sub-title {
+        left: 15px;
+        font-size: 1.4rem;
+    }
+    .card-container-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-one {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Sub-title {
+        left: 20px;
+        font-size: 1.4rem;
+        top: 3rem;
+    }
+    .card-container-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-one {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 576px) {
+    .Sub-title {
+        left: 10px;
+        font-size: 1.2rem;
+        top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .card-content-one h3 {
+        font-size: 18px;
+    }
+    .card-content-one p {
+        font-size: 14px;
+    }
+    .card-content-one .btn-one {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }

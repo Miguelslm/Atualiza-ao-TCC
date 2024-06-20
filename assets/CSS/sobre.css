@@ -19,7 +19,7 @@
 
 .About-title{
     margin-top: -5rem; 
-    font-size: 40px;
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     color: var(--main-color);
 }
@@ -37,12 +37,12 @@
 }
 
 .About-data {
-    margin-top: 7rem; 
+    margin-top: 5rem; 
 }
 
 .About-description {
     width: 500px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family:'Poppins', sans-serif;
     color: var(--main-color);
     text-align: left;
@@ -56,7 +56,7 @@
 }
 
 .About-details-description {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .About-details-icon {
@@ -128,8 +128,10 @@
     }
 
     .About-description {
+        position: relative;
+        right: 1rem;
         font-size: 18px;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 
     .About-details-description {

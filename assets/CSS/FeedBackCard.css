@@ -3,7 +3,8 @@
     color: #0c1129;
     position: relative;
     top: 55px;
-    /* left: 60px; */ /* causa do conflito */
+    left: 60px; /* causa do conflito */
+    width: 80%;
     font-size: 2rem;
 }
 
