@@ -10,6 +10,7 @@
 
 .Blog-container{
     margin-top: 2rem;
+
 }
 
 .Blog-post {
@@ -31,7 +32,7 @@
 
 .Blog-details {
     position: relative;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
     color: var(--main-color);
     top: 1.7rem;
@@ -40,7 +41,7 @@
 
 .Blog-title{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: auto;
     top: 2rem;
     margin-bottom: 2rem;
@@ -49,13 +50,20 @@
 }
 
 .Blog-date {
+    position: relative;
+    top: 1rem;
     font-size: .7rem;
     color: var(--main-color);
-    margin-bottom: 20px;
+   
 }
 
 .Read-more {
     text-align: right;
+}
+
+.button__icon{
+    position: relative;
+    top: 0.3rem;
 }
 
 .pagination{
