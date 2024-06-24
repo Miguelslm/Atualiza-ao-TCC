@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navigation = document.querySelector('.navigation');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const hamburgerMenu = document.querySelector('.hamburger-menu');
+//     const navigation = document.querySelector('.navigation');
 
-    hamburgerMenu.addEventListener('click', () => {
-        navigation.classList.toggle('show');
-    });
-});
+//     hamburgerMenu.addEventListener('click', () => {
+//         navigation.classList.toggle('show');
+//     });
+// });
