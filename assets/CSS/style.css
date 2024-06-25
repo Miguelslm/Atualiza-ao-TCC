@@ -913,11 +913,15 @@ img {
 }
 
 .nav__name {
+    position: relative;
+    bottom: .5rem;
   font-size: .7rem;
   color: #FFF;
 }
 
 .nav__icon {
+    position: relative;
+    bottom: .5rem;
   font-size: 1.5rem;
   color: var(--segund-color);
 }
