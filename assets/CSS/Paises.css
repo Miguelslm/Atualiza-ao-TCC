@@ -1,4 +1,4 @@
-.main-paises{
+/* .main-paises{
     margin: 0;
     padding: 0;
 }    
@@ -169,8 +169,8 @@ h5 {
     width: 100%;
     border-radius: 10px 10px 0 0px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens sejam colocados em várias linhas, se necessário */
-    justify-content: space-between; /* Espaço entre as colunas */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     text-align: left;
 }
 
@@ -179,7 +179,7 @@ h5 {
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
-    width: 48%; /* Cada item ocupará cerca de metade da largura do contêiner */
+    width: 48%; 
     box-sizing: border-box;
 }
 
@@ -187,7 +187,7 @@ h5 {
     color: var(--segund-color);
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 5px; /* Espaçamento entre label e value */
+    margin-bottom: 5px; 
 }
 
 .value {
@@ -228,7 +228,7 @@ h5 {
     }
 
     .info-item {
-        flex-direction: column; /* Mantém em coluna */
+        flex-direction: column; 
         padding: 10px;
     }
 
@@ -242,7 +242,7 @@ h5 {
 
 }
 
-/* Responsividade para smartphones */
+
 @media (max-width: 768px) {
     .Breadcrumb-title {
         font-size: 30px;
@@ -320,7 +320,7 @@ h5 {
     }
 
     .info-item {
-        flex-direction: column; /* Mantém em coluna */
+        flex-direction: column; 
         padding: 8px;
     }
 
@@ -329,4 +329,4 @@ h5 {
         font-size: 1rem;
     }
 
-}
+} */
