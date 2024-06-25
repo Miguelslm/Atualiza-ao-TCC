@@ -1,8 +1,3 @@
-.main-paises{
-    margin: 0;
-    padding: 0;
-}    
-
 
 .Breadcrumb-title{
     display: flex;
@@ -147,7 +142,7 @@ span{
 }
 
 
-.container {
+.container-info-paises{
     width: 100%;
     top: 50px;
     text-align: center;
