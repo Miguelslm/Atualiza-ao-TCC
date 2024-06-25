@@ -884,7 +884,7 @@ img {
     background-color:#0c1129;
     box-shadow: 0 -1px px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     padding: 0 1rem;
     display: grid;
     align-content: center;
