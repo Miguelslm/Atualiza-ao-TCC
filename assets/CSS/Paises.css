@@ -286,7 +286,7 @@ h5 {
     }
 
     .slide img {
-        width: 450px;
+        width: 100%;
     }
 
     #radio1:checked ~ .first {
