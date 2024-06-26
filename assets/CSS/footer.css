@@ -211,6 +211,8 @@ footer {
         text-align: center;
         font-size: 12px;
         height: 110px;
+        position: relative;
+        bottom: 20px;
     }
 }
 
