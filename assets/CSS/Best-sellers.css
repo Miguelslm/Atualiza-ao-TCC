@@ -140,6 +140,12 @@ h6 {
     font-size: 1rem;
 }
 
+#job-study{
+    margin-left: 50px;
+    font-size: 1.1rem;
+    color: var(--segund-color);
+}
+
 
 
 @media (max-width: 1024px) {
