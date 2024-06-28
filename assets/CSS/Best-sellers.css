@@ -187,9 +187,9 @@ h6 {
 
 
     .Best-sellers-text-story {
-        left: 10px;
+        left: 7px;
         font-size: 0.9rem;
-        width: 90%;
+        width: 80%;
     }
 
     .Best-sellers-img{
@@ -208,6 +208,8 @@ h6 {
     }
 
     .Best-sellers-submit {
+        position: relative;
+        left: 20px;
         padding-top: 30px;
         font-size: 1rem;
         margin-top: 5px;
@@ -227,9 +229,9 @@ h6 {
     }
 
     .Best-sellers-text{
-        left: 10px;
+        left: 7px;
         font-size: 0.9rem;
-        width: 90%;
+        width: 80%;
     }
 
     h6{
@@ -248,5 +250,9 @@ h6 {
 
     .List-li{
         margin: 10px;
+    }
+
+    #job-study{
+        width: 80%;
     }
 }
