@@ -291,20 +291,20 @@ h5 {
     }
 
     .slide img {
-        width: 100%;
+        width: 400px;
     }
 
     #radio1:checked ~ .first {
-        margin-left: 1%;
+        margin-left: 0%;
     }
     #radio2:checked ~ .first {
-        margin-left: -32%;
+        margin-left: -34%;
     }
     #radio3:checked ~ .first {
-        margin-left: -97%;
+        margin-left: -100%;
     }
     #radio4:checked ~ .first {
-        margin-left: -297%;
+        margin-left: -300%;
     }
 
     .manual-navigation,
