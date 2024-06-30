@@ -138,6 +138,7 @@ h6 {
     margin-left: 80px;
     width: 80%;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 #job-study{
@@ -181,7 +182,7 @@ h6 {
 
 @media (max-width: 768px) {
     .Best-sellers-title {
-        font-size: 1.5rem;
+        font-size: 30px;
         margin-top: 80px;
     }
 
@@ -189,7 +190,8 @@ h6 {
     .Best-sellers-text-story {
         left: 7px;
         font-size: 0.9rem;
-        width: 80%;
+        width: 90%;
+        margin-left: 0px;
     }
 
     .Best-sellers-img{
@@ -211,8 +213,9 @@ h6 {
         position: relative;
         left: 20px;
         padding-top: 30px;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-top: 5px;
+        margin-left: 0px;
     }
 
 
@@ -231,13 +234,14 @@ h6 {
     .Best-sellers-text{
         left: 7px;
         font-size: 0.9rem;
-        width: 80%;
+        width: 90%;
+        margin-left: 0px;
     }
 
     h6{
         padding-top: 20px;
         left: 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         width: 90%; 
     }
 
@@ -249,10 +253,22 @@ h6 {
     }
 
     .List-li{
+        font-size: 0.9rem;
         margin: 10px;
     }
 
     #job-study{
         width: 80%;
+    }
+    #Graduacao{
+        margin-left: 80px;
+        width: 80%;
+        font-size: 0.9rem;
+        margin-left: 30px;
+    }
+    #job-study{
+        margin-left: 20px;
+        font-size: 1.1rem;
+        color: var(--segund-color);
     }
 }
