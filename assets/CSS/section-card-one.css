@@ -8,6 +8,7 @@
 
 .carousel-card {
     display: flex;
+    flex-wrap: nowrap; /* Garante que os cartões não quebrem linha */
     transition: transform 0.3s ease;
 }
 
@@ -44,7 +45,6 @@
     color: #555;
 }
 
-
 /* Responsividade para telas menores (celulares) */
 
 @media (max-width: 1600px) {
@@ -57,7 +57,6 @@
 }
 
 @media (max-width: 1366px) {
-
     .carousel-container-card {
         padding: 5px 40px;
     }
@@ -88,14 +87,10 @@
     .carousel-container-card {
         padding: 5px 10px;
     }
-    .carousel-card {
-        flex-direction: column;
-        align-items: center;
-    }
     .card {
         width: 100%;
         max-width: 300px;
-        margin: 10px 0;
+        margin: 10px;
     }
     .card-content {
         padding: 15px;
@@ -107,13 +102,9 @@
     .carousel-container-card {
         padding: 5px;
     }
-    .carousel-card {
-        flex-direction: column;
-        align-items: center;
-    }
     .card {
         min-width: 90%;
-        margin: 10px 0;
+        margin: 10px;
     }
 }
 
