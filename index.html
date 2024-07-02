@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOXICONS-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--FONT-AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>iWorld Intercâmbio</title>
+    <!--CSS-->
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 
 <body>
 
+    <!------------------- HEADER --------------------->
+
     <header>
         <nav class="nav-bar">
             <div class="logo">
                 <a href="#">
-                    <img class="logo-img" src="./assets/image/logoiwolrd.png" alt="logo"
-                        id="logot">
+                    <img class="logo-img" src="./assets/image/logoiwolrd.png" alt="logo" id="logot">
                 </a>
             </div>
             <div class="nav-list">
@@ -34,10 +40,6 @@
             <div class="login-button">
                 <button><i class=''></i>ORÇAMENTO</button>
             </div>
-
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
-                </div>
         </nav>
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
@@ -79,24 +81,24 @@
         </div>
     </header>
 
-    <!------------------- carousel --------------------->
+    <!------------------- CAROUSEL --------------------->
 
     <div class="carousel">
 
-        <!-- list item -->
-         
+        <!-- LIST ITEM -->
+
         <div class="list">
             <div class="item">
-                <img src="./assets/image/dubaione.jpg">
+                <img src="./assets/image/dubaione.jpg" alt="dubai">
                 <div class="content">
-                   
+
                     <div class="title">EMIRADE ÁRABES</div>
                     <div class="topic">Dubai</div>
-                    
+
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/usaone.jpg">
+                <img src="./assets/image/usaone.jpg" alt="Estados unidos">
                 <div class="content">
                     <div class="title">ESTADOS UNIDOS</div>
                     <div class="topic">Washington</div>
@@ -104,29 +106,29 @@
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/australiaone.jpg">
+                <img src="./assets/image/australiaone.jpg" alt="Australia">
                 <div class="content">
-                    
+
                     <div class="title">AUSTRALIA</div>
                     <div class="topic">Queensland</div>
-                   
+
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/canadaone.jpg">
+                <img src="./assets/image/canadaone.jpg" alt="Canadá">
                 <div class="content">
                     <div class="title">CANADÁ</div>
                     <div class="topic">Toronto</div>
-                   
+
                 </div>
             </div>
         </div>
 
-        <!-- list thumnail -->
+        <!-- LIST THUMNAIL -->
 
         <div class="thumbnail">
             <div class="item">
-                <img src="./assets/image/dubaione.jpg">
+                <img src="./assets/image/dubaione.jpg" alt="Dubai">
                 <div class="content">
                     <div class="title">
                         EMIRATES ÁRABES
@@ -137,7 +139,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/usaone.jpg">
+                <img src="./assets/image/usaone.jpg" alt="Estados unidos">
                 <div class="content">
                     <div class="title">
                         ESTADOS UNIDOS
@@ -148,7 +150,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/australiaone.jpg">
+                <img src="./assets/image/australiaone.jpg" alt="Australia">
                 <div class="content">
                     <div class="title">
                         AUSTRALIA
@@ -159,7 +161,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/image/canadaone.jpg">
+                <img src="./assets/image/canadaone.jpg" alt="Canada">
                 <div class="content">
                     <div class="title">
                         CANADÁ
@@ -170,25 +172,26 @@
                 </div>
             </div>
         </div>
-        <!-- next prev -->
+        <!-- NEXT PREV -->
 
         <div class="arrows">
             <button id="prev">&lt;</button>
             <button id="next">&gt;</button>
         </div>
-        <!-- time running -->
+        <!-- TIME RUNNING -->
         <div class="time"></div>
     </div>
 
-    <!------------------- Crad --------------------->
+    <!------------------- CARD --------------------->
 
     <section>
+
         <div class="carousel-container-card">
             <div class="carousel-card">
                 <div class="card">
                     <div class="card-image">
                         <img src="https://msi.imgix.net/host/imagens/3c21c963-be4c-41dc-8cdd-54677763bc67.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
-                            alt="Descrição da imagem 1">
+                            alt="Globo">
                     </div>
                     <div class="card-content">
                         <h2>Aprender um Idioma</h2>
@@ -198,7 +201,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="https://msi.imgix.net/host/imagens/99eba907-c5d2-41c9-b830-083f228c9d26.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
-                            alt="Descrição da imagem 2">
+                            alt="Mala">
                     </div>
                     <div class="card-content">
                         <h2>Trabalhe Fora</h2>
@@ -208,7 +211,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="https://msi.imgix.net/host/imagens/3766b515-d39a-4973-a52f-1d333fe9a1ee.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
-                            alt="Descrição da imagem 3">
+                            alt="Tênis">
                     </div>
                     <div class="card-content">
                         <h2>Intercâmbio Para Adolescentes</h2>
@@ -217,8 +220,8 @@
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <img src="https://msi.imgix.net/host/imagens/ee16bad7-a745-4d33-8458-4393240188b3.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format alt="
-                            Descrição da imagem 4">
+                        <img src="https://msi.imgix.net/host/imagens/ee16bad7-a745-4d33-8458-4393240188b3.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
+                            alt="Capelo">
                     </div>
                     <div class="card-content">
                         <h2>Ensino Superior</h2>
@@ -228,7 +231,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="https://msi.imgix.net/host/imagens/6d4d4609-134c-458d-9b9e-fba5ddf302fa.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
-                            alt="Descrição da imagem 5">
+                            alt="Logo Canadá">
                     </div>
                     <div class="card-content">
                         <h2>Imigração para o Canada</h2>
@@ -238,18 +241,18 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="https://msi.imgix.net/host/imagens/8e52d870-7fde-44be-b726-f3a4a085973a.svg+xml?w=55&amp;h=55&amp;fit=crop&amp;auto=compress,format"
-                            alt="Descrição da imagem 6">
+                            alt="Calendario">
                     </div>
                     <div class="card-content">
                         <h2>Opções de Longa Duração</h2>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
-    <!------------------- CardOne --------------------->
+    <!------------------- CARD-SELLERS --------------------->
 
     <section>
         <h3 class="Sub-title-sellers">VEJA NOSSOS PROGRAMAS BEST-SELLERS:</h3>
@@ -300,21 +303,18 @@
         </div>
     </section>
 
-    <!------------------- BackGround --------------------->
+
+    <!------------------- BACKGROUND-FIXED --------------------->
 
     <section>
         <div class="container-fixed">
-            <div class="content-fixed">
-                <!-- <h1>fexed Background</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid eum error voluptatibus harum. Aliquam amet consectetur architecto velit nostrum veritatis nesciunt voluptatem consequuntur at sint. Ad id cum autem amet, nemo atque iste. Ad deleniti voluptas fuga incidunt perspiciatis.</p> -->
-
-            </div>
+            <div class="content-fixed"></div>
 
         </div>
         <div class="container-imagem"></div>
     </section>
 
-<!------------------- CardPaises --------------------->
+    <!------------------- CARD-PAÍSES --------------------->
 
     <section>
         <h3 class="Sub-title-two" id="Paises">PRINCIPAIS OPÇÕES DE PAÍSES:</h3>
@@ -388,7 +388,9 @@
             </div>
 
         </div>
-        </div>
+    </section>
+    <!------------------- FEEDBACKS --------------------->
+    <section>
         <h3 class="sub-tetle-Three">FEEDBACKS:</h3>
         <div class="testimonials">
             <div class="container-feedback">
@@ -400,15 +402,16 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide testimonials-item">
                                 <div class="info">
-                                    <img src="./assets/img/Rafaella.jpeg" alt="img">
+                                    <img src="./assets/img/Rafaella.jpeg" alt="imagem de uma mulher">
                                     <div class="text-box">
                                         <h3 class="name">Rafaella Anjos</h3>
-                                        <span class="job">Analista de Operação Jr</span>
+                                        <span class="job">Analista de Operação JR</span>
                                     </div>
                                 </div>
                                 <p class="Feedback-comment">As viagens de intercâmbio são transformadoras, ampliam
                                     horizontes, enriquecem culturas e proporcionam experiências inesquecíveis. Recomendo
-                                    muito!</p>
+                                    muito!
+                                </p>
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -419,15 +422,17 @@
                             </div>
                             <div class="swiper-slide testimonials-item">
                                 <div class="info">
-                                    <img src="./assets/img/Junior.jpeg" alt="img">
+                                    <img src="./assets/img/Junior.jpeg" alt="imagem de uma homem">
                                     <div class="text-box">
-                                        <h3 class="name">Júnior Seven</h3>
-                                        <span class="job">Analista de Redes Jr</span>
+                                        <h3 class="name"> Isaac Júnior</h3>
+                                        <span class="job">Analista de Redes JR</span>
                                     </div>
                                 </div>
                                 <p class="Feedback-comment">Intercâmbio oferece aprendizado intenso, conexões globais,
                                     crescimento pessoal e memórias duradouras. Uma experiência verdadeiramente
-                                    enriquecedora!</p>
+                                    enriquecedora!
+                                </p>
+
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -438,7 +443,7 @@
                             </div>
                             <div class="swiper-slide testimonials-item">
                                 <div class="info">
-                                    <img src="./assets/img/marcelo.jpeg" alt="img">
+                                    <img src="./assets/img/marcelo.jpeg" alt="imagem de uma homem">
                                     <div class="text-box">
                                         <h3 class="name">Marcelo Agusto</h3>
                                         <span class="job">analise de desenvolvimento </span>
@@ -457,7 +462,7 @@
                             </div>
                             <div class="swiper-slide testimonials-item">
                                 <div class="info">
-                                    <img src="./assets/img/Miguel.jpg" alt="img">
+                                    <img src="./assets/img/Miguel.jpg" alt="imagem de uma homem">
                                     <div class="text-box">
                                         <h3 class="name">Miguel Godoy</h3>
                                         <span class="job">web developer</span>
@@ -475,7 +480,7 @@
                             </div>
                             <div class="swiper-slide testimonials-item">
                                 <div class="info">
-                                    <img src="./assets/img/Pedro.jpeg" alt="img">
+                                    <img src="./assets/img/Pedro.jpeg" alt="imagem de uma homem">
                                     <div class="text-box">
                                         <h3 class="name">Pedro Aloia</h3>
                                         <span class="job">Estudante</span>
@@ -499,10 +504,14 @@
             </div>
     </section>
 
-    <!------------------- form --------------------->
 
-     <section class="section-form">
+    <!------------------- FORM --------------------->
+
+    <section class="section-form">
         <div class="contact">
+
+            <!-- MAPS -->
+            
             <div class="maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7086781881917!2d-46.62621523526237!3d-23.507000381680996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1716567263320!5m2!1spt-BR!2sbr"
@@ -517,19 +526,20 @@
                     <label>E-mail</label>
                     <input type="email" name="email" placeholder="exemplo@gmail.com *" autocomplete="off" required>
                     <label>Telefone</label>
-                    <input type="number" name="phone" placeholder="012345678910 *" autocomplete="off" required>
+                    <input type="text" name="phone" placeholder="(11) 95432-6376 *" autocomplete="off" required>
                     <label>Mensagem</label>
-                    <textarea name="message" id="" cols="35" rows="8" placeholder="Como posso ajudá-lo?" required></textarea>
+                    <textarea name="message" id="" cols="35" rows="8" placeholder="Como posso ajudá-lo?"
+                        required></textarea>
                     <button class="submit" type="submit">Enviar</button>
                     <input type="hidden" name="accessKey" value="0d8918a7-3273-434a-8649-5c73e4a53362">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+                    <input type="hidden" name="redirectTo" value="https://miguelslm.github.io/Atualiza-ao-TCC/#">
                 </form>
             </div>
         </div>
     </section>
 
-<!------------------- footer --------------------->
-    
+    <!------------------- FOOTER --------------------->
+
     <footer>
 
         <div id="div_fixa" class="flutuar" data-shrink="yes">
@@ -539,7 +549,7 @@
                 <div class="flex_itens">
                     <a href="https://wa.me/5534997128798?text=Ol%C3%A1%2C+Tudo+bem%3F" target="_blank"><img
                             src="./assets/image/whatsapp.png" alt="Ícone do WhatsApp"></a>
-                    <!-- <span>Converse comigo</span> -->
+            
                 </div>
 
 
@@ -552,7 +562,8 @@
                 <p>iworld.intercambio@gmail.com</p>
 
                 <div id="footer_social_media">
-                    <a href="https://www.instagram.com/iworldios2024/" target="_blank" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com/iworldios2024/" target="_blank" class="footer-link"
+                        id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
@@ -571,7 +582,8 @@
                     <h3>Blog</h3>
                 </li>
                 <li>
-                    <a href="./assets/HTML/blog.html#why-exchange" class="footer-link">Por que fazer Intercâmbio?</a>
+                    <a href="./assets/HTML/blog.html#why-exchange" class="footer-link">Por que fazer
+                        Intercâmbio?</a>
                 </li>
                 <li>
                     <a href="./assets/HTML/blog.html#best-countries" class="footer-link">Melhores Países</a>
@@ -583,16 +595,16 @@
 
             <ul class="footer-list">
                 <li>
-                    <h3>Serviços</h3>
+                    <h3>Products</h3>
                 </li>
                 <li>
-                    <a href="./assets/HTML/High-school.html" class="footer-link">High school</a>
+                    <a href="#" class="footer-link">App</a>
                 </li>
                 <li>
-                    <a href="./assets/HTML/Teen.html" class="footer-link">Intercâmbio Teen®</a>
+                    <a href="#" class="footer-link">Desktop</a>
                 </li>
                 <li>
-                    <a href="./assets/HTML/Trabalhar-Estudar.html" class="footer-link">Trabalhar e Estudar um Idioma</a>
+                    <a href="#" class="footer-link">Cloud</a>
                 </li>
             </ul>
 
@@ -605,7 +617,8 @@
                 </p>
 
                 <div id="input_group">
-                    <input type="email" id="email">
+                    
+                    <input type="email" name="email" autocomplete="off" required>
                     <button>
                         <i class="fa-regular fa-envelope"></i>
                     </button>
@@ -613,11 +626,12 @@
             </div>
         </div>
 
+        <!-- COPY-RIGHT -->
+
         <div id="footer_copyright">
             &#169
             2024 All Rights Reserved - iWorld Intercâmbio Viagens Ltda - CNPJ - 57.174.776/0003-85.
         </div>
-
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -625,12 +639,18 @@
             </div>
           </div>
     </footer>
-
-
-
     
+
+
+
+
+        <!-- GTRANSLATE -->
+
     <div class="gtranslate_wrapper"></div>
     <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "en", "es"], "globe_color": "#66aaff", "wrapper_selector": ".gtranslate_wrapper", "horizontal_position": "right", "vertical_position": "top", "alt_flags": { "en": "usa", "pt": "brazil" }, "globe_size": 40 }</script>
+
+    <!-- LINKS JAVASCRIPT -->
+
     <script src="./assets/JS/login.js"></script>
     <script src="./assets/JS/mobileMenu.js"></script>
     <script src="./assets/JS/app.js"></script>
@@ -641,7 +661,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/JS/feedback-card.js"></script>
     <script src="./assets/JS/highschool.js"></script>
-    <script src="./assets/JS/carousel-container-card.js"></script>
     <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
