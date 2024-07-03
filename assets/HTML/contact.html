@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOXICONS-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--FONT-AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>iWorld Intercâmbio</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/sobre.css">
+    <!--CSS-->
+
+    <link rel="stylesheet" href="../CSS/contact.css">
 </head>
 
 <body>
+
+    <!------------------- HEADER --------------------->
+
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -26,17 +34,14 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="../../index.html#Paises" class="nav-link">Países</a></li>
-                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../HTML/blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="../HTML/sobre.html" class="nav-link">Sobre</a></li>
                 </ul>
             </div>
             <div class="login-button">
                 <a href="../HTML/contact.html">
                     <button><i class=''></i>ORÇAMENTO</button>
                 </a>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="nav__menu" id="nav-menu">
@@ -63,61 +68,104 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="../../index.html#paises" class="nav__link">
+                    <a href="../../index.html#Paises" class="nav__link">
                         <i class='bx bx-briefcase-alt nav__icon'></i>
                         <span class="nav__name">Países</span>
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#footer_content" class="nav__link">
+                    <a href="../HTML/contact.html" class="nav__link">
                         <i class='bx bx-message-square-detail nav__icon'></i>
-                        <span class="nav__name">Contatos</span>
+                        <span class="nav__name">Orçamento</span>
                     </a>
                 </li>
             </ul>
         </div>
     </header>
 
+    <!-- MAIN -->
+
+    <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== sobre ===============-->
-        <section class="about section container">
-            <h2 class="Breadcrumb-title">Sobre</h2>
-            <!-- <h3 class="breadcrumb__subtitle">Inicio > <span>Sobre nós</span></h3> -->
+        <!--=============== CONTACT US ===============-->
+        <section class="contact section container">
+            <h2 class="breadcrumb__title">Contatos</h2>
+            <h3 class="breadcrumb__subtitle">Inicio > <span class="span">Orçamento</span></h3>
 
-            <div class="About-container grid">
-                <img src="../img/paises_para_fazer_intercambio.jpg" alt="" class="About-img">
+            <div class="contact__container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="bx bx-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Telefone</h3>
+                            <span class="contact__subtitle">(34) 9712-8798</span>
+                        </div>
+                    </div>
 
-                <div class="About-data">
-                    <h2 class="About-title">
-                             Porque escolher nós
-                    </h2>
+                    <div class="contact__information">
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contact__subtitle">iwrold.intercambio@gmail.com</span>
+                        </div>
+                    </div>
 
-                    <p class="About-description">
-                        Escolher a iWorld Intercâmbio é optar por uma experiência transformadora e única, que vai muito além de simplesmente estudar ou trabalhar no exterior. Nosso compromisso é com você, proporcionando não apenas as melhores oportunidades, mas também um suporte integral que garante uma transição suave e segura para a sua nova vida em outro país
-                    </p>
-                    <div class="About-details">
-                        <p class="About-details-description">
-                            <i class="bx bxs-check-square About-details-icon"></i>
-                            Parcerias Globais.
-                        </p>
-                        <p class="About-details-description">
-                            <i class="bx bxs-check-square About-details-icon"></i>
-                            Suporte Integral.
-                        </p>
-                        <p class="About-details-description">
-                            <i class="bx bxs-check-square About-details-icon"></i>
-                            Oportunidades de Crescimento Pessoal.
-                        </p>
+                    <div class="contact__information">
+                        <i class="bx bx-map contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Endereço</h3>
+                            <span class="contact__subtitle"> Av. Gen. Ataliba Leonel, 245 - Santana - SP</span>
+                        </div>
                     </div>
                 </div>
+
+                <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Nome</label>
+                            <input type="text" name="name"  autocomplete="off" required  class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" name="email" placeholder="exemplo@gmail.com *" autocomplete="off" required class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Telefone</label>
+                        <input type="text" name="phone" placeholder="(11) 95432-6376 *" autocomplete="off" required class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Mensagem</label>
+                        <textarea name="message" id="" cols="35" rows="8"
+                        required class="contact__input"></textarea>
+                    </div>
+
+                    <button class="button" type="submit">Enviar</button>
+                    <input type="hidden" name="accessKey" value="0d8918a7-3273-434a-8649-5c73e4a53362">
+                    <input type="hidden" name="redirectTo" value="https://miguelslm.github.io/Atualiza-ao-TCC/#">
+  
+
+                </form>
             </div>
+
+            <div id="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.7168851076244!2d-46.6269884!3d-23.5067049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1720036959505!5m2!1spt-BR!2sbr"
+                    width="1700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
         </section>
-        
-        
     </main>
-    
+
+    <!------------------- FOOTER --------------------->
+
     <footer>
+
         <div id="div_fixa" class="flutuar" data-shrink="yes">
 
             <a href="" target="_blank">
@@ -125,7 +173,7 @@
                 <div class="flex_itens">
                     <a href="https://wa.me/5534997128798?text=Ol%C3%A1%2C+Tudo+bem%3F" target="_blank"><img
                             src="../image/whatsapp.png" alt="Ícone do WhatsApp"></a>
-                    <!-- <span>Converse comigo</span> -->
+
                 </div>
 
 
@@ -138,7 +186,8 @@
                 <p>iworld.intercambio@gmail.com</p>
 
                 <div id="footer_social_media">
-                    <a href="https://www.instagram.com/iworldios2024/" target="_blank" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com/iworldios2024/" target="_blank" class="footer-link"
+                        id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
@@ -157,13 +206,14 @@
                     <h3>Blog</h3>
                 </li>
                 <li>
-                    <a href="./blog.html#why-exchange" class="footer-link">Por que fazer Intercâmbio?</a>
+                    <a href="./assets/HTML/blog.html#why-exchange" class="footer-link">Por que fazer
+                        Intercâmbio?</a>
                 </li>
                 <li>
-                    <a href="./blog.html#best-countries" class="footer-link">Melhores Países</a>
+                    <a href="./assets/HTML/blog.html#best-countries" class="footer-link">Melhores Países</a>
                 </li>
                 <li>
-                    <a href="./blog.html#values" class="footer-link">Valores</a>
+                    <a href="./assets/HTML/blog.html#values" class="footer-link">Valores</a>
                 </li>
             </ul>
 
@@ -182,6 +232,7 @@
                 </li>
             </ul>
 
+
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
 
@@ -191,13 +242,16 @@
                 </p>
 
                 <div id="input_group">
-                    <input type="email" id="email">
+
+                    <input type="email" name="email" autocomplete="off" required>
                     <button>
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
             </div>
         </div>
+
+        <!-- COPY-RIGHT -->
 
         <div id="footer_copyright">
             &#169
@@ -206,16 +260,22 @@
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
+        </div>
     </footer>
 
 
 
-    
+
+
+    <!-- GTRANSLATE -->
+
     <div class="gtranslate_wrapper"></div>
     <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "en", "es"], "globe_color": "#66aaff", "wrapper_selector": ".gtranslate_wrapper", "horizontal_position": "right", "vertical_position": "top", "alt_flags": { "en": "usa", "pt": "brazil" }, "globe_size": 40 }</script>
+
+    <!-- LINKS JAVASCRIPT -->
+
     <script src="./assets/JS/login.js"></script>
     <script src="./assets/JS/mobileMenu.js"></script>
     <script src="./assets/JS/app.js"></script>
@@ -229,7 +289,7 @@
     <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
 
