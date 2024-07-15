@@ -1,2 +1,2 @@
-GitHub Integrantes: 
+Integrantes: 
 https://github.com/IsaacJunior66
